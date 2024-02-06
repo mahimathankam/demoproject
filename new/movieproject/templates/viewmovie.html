@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  {% for i in b %}
+<div class="card ms-5 mt-3" style="width:300px;height:450px;">
+  <img src="{{i.img.url}}"  height="200px" width="250px" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">{{i.name}}</h5>
+    <p class="card-text">{{i.desc}}</p>
+    <p class="card-text">{{i.year}}</p>
+    <a href="{% url 'detail' i.name %}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endfor %}
+  </div>
+
+{% endblock %}

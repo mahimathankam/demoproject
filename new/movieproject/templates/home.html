@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-4 ">
+    <div class="card mt-5" style="width: 300px;height:400px;">
+  <img src="{% static 'images/ava.jpeg' %}" class="card-img-top" height="190px;" width="100px;">
+  <div class="card-body">
+    <h5 class="card-title">Avatar</h5>
+    <p class="card-text">Avatar is the story of Jake Sully.As a bond with her grows, he is drawn into a battle for the survival of her world. </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+    </div>
+    <div class="col-md-4 "  >
+        <div class="card mt-5" style="width:300px;height:400px;">
+  <img src="{% static 'images/interstellar.jpeg' %}" class="card-img-top"  height="200px;" width="100px;">
+  <div class="card-body">
+    <h5 class="card-title">Interstellar</h5>
+    <p class="card-text">Set in a dystopian future where humanity is embroiled in a catastrophic blight and famine.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mt-5" style="width:300px;height:400px;">
+  <img src="{% static 'images/deadpool.jpeg' %}" class="card-img-top"  height="200px;" width="100px;">
+  <div class="card-body">
+    <h5 class="card-title">Deadpool</h5>
+    <p class="card-text">Deadpool is depicted as a super villain of the New Mutants and X-Force.</p>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+</div>
+</div>
+</center>
+{% endblock %}

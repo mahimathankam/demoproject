@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<center><h2>Book Details</h2>
+    <img src="{{b.img.url}}" height="200px" width="200px" style="float:left;">
+    {{b.name}}<br>
+    {{b.desc}}<br>
+    {{b.year}}<br>
+    <a href="{% url 'update' b.name %}" class="btn btn-warning">Update</a>
+    <a href="{% url 'delete' b.name %}" class="btn btn-danger">Delete</a>
+</center>
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center><h2>Update Movie Details-Built in</h2>
+     <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+         <table class="table table-bordered " style="width:450px;height:400px;">
+          {{form.as_table}}
+         </table>
+        <input type="submit">
+    </form>
+</center>
+{% endblock %}
